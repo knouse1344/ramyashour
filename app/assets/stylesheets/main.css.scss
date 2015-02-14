@@ -1,0 +1,23 @@
+// Place all the styles related to the main controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+#index {
+	padding-top: 3em; 
+
+	h1 {
+		font-family: 'Raleway', sans-serif;
+		font-weight: 300;
+		font-size: 1.5em;
+		text-transform: uppercase;
+		text-align: center;
+		color: #fff;
+		margin-bottom: 5em;
+	}
+
+	.bg-img {
+		width: 100%;
+	}
+}
