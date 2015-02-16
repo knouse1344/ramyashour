@@ -26,6 +26,17 @@ body {
 }
 
 #header {
+	height: 11em;
+
+
+	.container {	
+		position: fixed;
+		background: rgba(255,255,255,.9);
+		top:0;
+		left: 0;
+		z-index: 15;
+		width: 100%;
+	}
 
 	.site-heading {
 		text-align: center;
@@ -34,6 +45,10 @@ body {
 		font-family: 'Raleway', sans-serif;
 		font-weight: 600;
 		text-transform: uppercase;
+	}
+
+	.logo-long {
+		width: 100%;
 	}
 	
 	.nav-links {
@@ -55,4 +70,10 @@ body {
 			}
 		}
 	}
+}
+
+footer {
+	margin: 5em 0 0;
+	padding: 3em 0;
+	text-align: center;
 }
