@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5, p, span, a {
 
 	h1 {
 		font-family: 'Raleway', sans-serif;
-		font-weight: 300;
+		font-weight: 600;
 		font-size: 2.5em;
 		text-transform: uppercase;
 		text-align: center;
@@ -78,6 +78,9 @@ h1, h2, h3, h4, h5, p, span, a {
 	#coaches {
 		padding: 3em 0;
 
+		h2 {
+			padding-bottom: .5em;
+		}
 
 		img {
 			width: 100%;
@@ -85,6 +88,27 @@ h1, h2, h3, h4, h5, p, span, a {
 
 		.coach {
 			padding: 3em 0;
+		}
+
+		.photo {
+
+		}
+
+		.info {
+			border-top: 1px solid #ccc;
+
+			.description {
+				font-size: 1.25em;
+				line-height: 1.65em;
+			}
+		}
+
+		.divider {
+			margin-top: 5em;
+
+			h2 {
+				padding: 1.5em 0;
+			}
 		}
 
 	}

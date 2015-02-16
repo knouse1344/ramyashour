@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, p, span, a {
 /* line 15, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index h1 {
   font-family: 'Raleway', sans-serif;
-  font-weight: 300;
+  font-weight: 600;
   font-size: 2.5em;
   text-transform: uppercase;
   text-align: center;
@@ -84,23 +84,44 @@ h1, h2, h3, h4, h5, p, span, a {
 #index #coaches {
   padding: 3em 0;
 }
-/* line 82, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 81, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+#index #coaches h2 {
+  padding-bottom: .5em;
+}
+/* line 85, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #coaches img {
   width: 100%;
 }
-/* line 86, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 89, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #coaches .coach {
   padding: 3em 0;
 }
-/* line 92, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 97, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+#index #coaches .info {
+  border-top: 1px solid #ccc;
+}
+/* line 100, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+#index #coaches .info .description {
+  font-size: 1.25em;
+  line-height: 1.65em;
+}
+/* line 106, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+#index #coaches .divider {
+  margin-top: 5em;
+}
+/* line 109, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+#index #coaches .divider h2 {
+  padding: 1.5em 0;
+}
+/* line 116, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #about {
   padding: 3em 0;
 }
-/* line 97, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 121, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #apply {
   padding: 3em 0;
 }
-/* line 101, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 125, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #schedule {
   padding: 3em 0;
 }
@@ -204,4 +225,11 @@ footer {
   margin: 5em 0 0;
   padding: 3em 0;
   text-align: center;
+}
+
+@media (max-width: 992px) {
+  /* line 105, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/application.css.scss */
+  body {
+    font-size: 2em;
+  }
 }
