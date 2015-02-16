@@ -48,7 +48,13 @@ body {
 	}
 
 	.logo-long {
+		display: block;
+		text-decoration: none;
 		width: 100%;
+
+		img {
+			width: 100%;
+		}
 	}
 	
 	.nav-links {
@@ -66,7 +72,22 @@ body {
 				font-size: 1.25em;
 				font-weight: 300;
 				color: #000;
+				opacity: .5;
+				text-decoration: none;
 				text-transform: uppercase;
+				-webkit-transition: all .25s;
+				-moz-transition: all .25s;
+				-o-transition: all .25s;
+    			transition: all .25s;
+			}
+
+			a:hover {
+				opacity: 1;
+			}
+
+			a.active {
+				opacity: 1;
+				font-weight: 600;
 			}
 		}
 	}

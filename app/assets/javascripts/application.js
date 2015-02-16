@@ -19,6 +19,58 @@
 // Main Doc Ready Function
 $(document).ready(function() {
 
+
+    // Cached vars
+    /////////////////////////////////////////////////////////////////////////////////////////////
+    var navlinks = $('.nav-links li a');
+    var navcoaches = $('.nav-coaches');
+    var navabout = $('.nav-about');
+    var navschedule = $('.nav-schedule');
+    var navapply = $('.nav-apply');
+    var coaches = $('#coaches');
+    var about = $('#about');
+    var schedule = $('#schedule');
+    var apply = $('#apply');
+
+
+    // Waypoints functions
+    /////////////////////////////////////////////////////////////////////////////////////////////
+    $(coaches).waypoint(function(direction) {
+        if (direction == 'down') {
+            $(navlinks).removeClass('active');
+            $(navcoaches).addClass('active');
+        } else {
+            $(navlinks).removeClass('active');
+        }
+    }, {offset: '200px'});
+    $(about).waypoint(function(direction) {
+        if (direction == 'down') {
+            $(navlinks).removeClass('active');
+            $(navabout).addClass('active');
+        } else {
+            $(navcoaches).addClass('active');
+            $(navabout).removeClass('active');
+        }
+    }, {offset: '200px'});
+    $(schedule).waypoint(function(direction) {
+        if (direction == 'down') {
+            $(navlinks).removeClass('active');
+            $(navschedule).addClass('active');
+        } else {
+            $(navlinks).removeClass('active');
+            $(navabout).addClass('active');
+        }
+    }, {offset: '200px'});
+    $(apply).waypoint(function(direction) {
+        if (direction == 'down') {
+            $(navlinks).removeClass('active');
+            $(navapply).addClass('active');
+        } else {
+            $(navlinks).removeClass('active');
+            $(navschedule).addClass('active');
+        }
+    }, {offset: '200px'});
+
     // Smooth scrolling Javascript
     /////////////////////////////////////////////////////////////////////////////////////////////
     $('a[href*=#]:not([href=#])').click(function() {
