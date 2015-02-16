@@ -21,6 +21,10 @@ h1, h2, h3, h4, h5, p, span, a {
 		color: #000;
 	}
 
+	h3 {
+		font-weight: 400;
+	}
+
 	.bg-img {
 		width: 100%;
 	}
@@ -116,13 +120,29 @@ h1, h2, h3, h4, h5, p, span, a {
 	#about {
 		padding: 3em 0;
 
+		.about-images {
+			margin: 2em 0;
+			width: 100%;
+		}
 	}
 
 	#apply {
 		padding: 3em 0;
+
+		.application-info {
+			text-align: center;
+
+			h4 {
+				margin-top: 1.5em;
+			}
+		}
 	}
 
 	#schedule {
 		padding: 3em 0;
+
+		.daily-schedule {
+			text-align: center;
+		}
 	}
 }
