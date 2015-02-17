@@ -22,7 +22,7 @@ html, body {
 }
 
 body {
-	background: #fff !important;
+	background: #000 !important;
 }
 
 #header {
@@ -31,7 +31,7 @@ body {
 
 	.container {	
 		position: fixed;
-		background: rgba(255,255,255,.9);
+		background: #000;
 		top:0;
 		left: 0;
 		z-index: 15;
@@ -41,10 +41,27 @@ body {
 	.site-heading {
 		text-align: center;
 		margin: 2em 0;
-		color: #000;
+		color: #fff;
 		font-family: 'Raleway', sans-serif;
 		font-weight: 600;
 		text-transform: uppercase;
+	}
+
+	.logo {
+		display: block;
+		width: 100px;
+		margin: 1em auto 0;
+	}
+
+	h1 {
+		margin: .5em 0 1em;
+		line-height: 1.5em;
+		color: #e7af58;
+		font-size: 1.5em;
+		font-weight: 600;
+		text-transform: uppercase;
+		font-family: "Raleway", sans-serif;
+		text-align: center;
 	}
 
 	.logo-long {
@@ -71,7 +88,7 @@ body {
 				font-family: 'Raleway', sans-serif;
 				font-size: 1.25em;
 				font-weight: 300;
-				color: #000;
+				color: #fff;
 				opacity: .5;
 				text-decoration: none;
 				text-transform: uppercase;
