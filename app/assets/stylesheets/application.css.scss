@@ -27,6 +27,8 @@ body {
 
 #header {
 	height: 11em;
+	position: relative;
+	z-index: 1000;
 
 
 	.container {	

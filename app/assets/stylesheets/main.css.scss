@@ -145,10 +145,12 @@ h1, h2, h3, h4, h5, p, span, a {
 				margin: 4em 0 0;
 				position: relative;
 				z-index: 15;
+				line-height: 1.5em;
 				font-size: 3em;
 				font-weight: 600;
 				font-style: italic;
 				text-transform: uppercase;
+				text-shadow: 3px 3px 2px #000;
 			}
 
 			p {
@@ -156,6 +158,7 @@ h1, h2, h3, h4, h5, p, span, a {
 				font-size: 1.25em;
 				position: relative;
 				z-index: 15;
+				text-shadow: 2px 2px 1px #000;
 			}
 
 			.ramy {
@@ -168,6 +171,14 @@ h1, h2, h3, h4, h5, p, span, a {
 
 			.haitham {
 
+			}
+
+			.additional {
+				text-align: center;
+
+				h2 {
+					margin: 3em 0;
+				}
 			}
 
 			.coach-photo {
@@ -195,6 +206,22 @@ h1, h2, h3, h4, h5, p, span, a {
 				top: 0;
 			}
 
+			.coach-full {
+				height: 100%;
+				width: 100%;
+				left: 0;
+				top: 0;
+				position: absolute;
+				opacity: .5;
+				background: url('/assets/ramy_floor.jpg');
+				background-size: cover;
+				background-position: center;
+				-webkit-transition: all .25s;
+				-moz-transition: all .25s;
+				-o-transition: all .25s;
+    			transition: all .25s;
+			}
+
 			.info {
 				border-top: 1px solid #ccc;
 
@@ -216,6 +243,10 @@ h1, h2, h3, h4, h5, p, span, a {
 			}
 
 			.bg-photo-haitham {
+				opacity: 1;
+			}
+
+			.coach-full {
 				opacity: 1;
 			}
 		}
