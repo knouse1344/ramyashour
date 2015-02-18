@@ -143,7 +143,7 @@ h1, h2, h3, h4, h5, p, span, a {
 }
 /* line 145, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #coaches .coach h2 {
-  margin: 4em 0 0;
+  margin: 3em 0 0;
   position: relative;
   z-index: 15;
   line-height: 1.5em;
@@ -155,25 +155,26 @@ h1, h2, h3, h4, h5, p, span, a {
 }
 /* line 157, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #coaches .coach p {
-  margin: 0 0 9em;
-  font-size: 1.25em;
+  margin: 0 0 8em;
+  font-size: 1.65em;
+  line-height: 1.75em;
   position: relative;
   z-index: 15;
   text-shadow: 2px 2px 1px #000;
 }
-/* line 169, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 170, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #coaches .coach .hisham {
   text-align: right;
 }
-/* line 177, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 178, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #coaches .coach .additional {
   text-align: center;
 }
-/* line 180, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 181, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #coaches .coach .additional h2 {
   margin: 3em 0;
 }
-/* line 185, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 186, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #coaches .coach .coach-photo {
   height: 100%;
   width: auto;
@@ -184,22 +185,22 @@ h1, h2, h3, h4, h5, p, span, a {
   -o-transition: all .25s;
   transition: all .25s;
 }
-/* line 195, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 196, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #coaches .coach .bg-photo-ramy {
   right: 0;
   top: 0;
 }
-/* line 200, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 201, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #coaches .coach .bg-photo-hisham {
   left: 0;
   top: 0;
 }
-/* line 205, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 206, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #coaches .coach .bg-photo-haitham {
   right: 0;
   top: 0;
 }
-/* line 210, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 211, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #coaches .coach .coach-full {
   height: 100%;
   width: 100%;
@@ -215,65 +216,65 @@ h1, h2, h3, h4, h5, p, span, a {
   -o-transition: all .25s;
   transition: all .25s;
 }
-/* line 226, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 227, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #coaches .coach .info {
   border-top: 1px solid #ccc;
 }
-/* line 229, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 230, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #coaches .coach .info .description {
   font-size: 1.25em;
   line-height: 1.65em;
 }
-/* line 238, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 239, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #coaches .coach:hover .bg-photo-ramy {
   opacity: 1;
 }
-/* line 242, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 243, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #coaches .coach:hover .bg-photo-hisham {
   opacity: 1;
 }
-/* line 246, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 247, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #coaches .coach:hover .bg-photo-haitham {
   opacity: 1;
 }
-/* line 250, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 251, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #coaches .coach:hover .coach-full {
   opacity: 1;
 }
-/* line 255, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 256, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #coaches .divider {
   margin-top: 5em;
 }
-/* line 258, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 259, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #coaches .divider h2 {
   padding: 1.5em 0;
 }
-/* line 265, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 266, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #about {
   padding: 3em 0;
 }
-/* line 268, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 269, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #about .about-images {
   margin: 2em 0;
   width: 100%;
 }
-/* line 274, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 275, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #apply {
   padding: 3em 0;
 }
-/* line 277, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 278, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #apply .application-info {
   text-align: center;
 }
-/* line 280, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 281, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #apply .application-info h4 {
   margin-top: 1.5em;
 }
-/* line 286, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 287, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #schedule {
   padding: 3em 0;
 }
-/* line 289, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 290, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #schedule .daily-schedule {
   text-align: center;
 }
