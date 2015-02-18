@@ -52,6 +52,7 @@ h1, h2, h3, h4, h5, p, span, a {
 	}
 
 	#latest {
+		padding: 2em 0 5em;
 
 		h3 {
 			text-transform: uppercase;
@@ -121,6 +122,10 @@ h1, h2, h3, h4, h5, p, span, a {
 	#coaches {
 		padding: 3em 0;
 
+		h1 {
+			margin: 2em 0 3em;
+		}
+
 		h2 {
 			padding-bottom: .5em;
 		}
@@ -130,19 +135,88 @@ h1, h2, h3, h4, h5, p, span, a {
 		}
 
 		.coach {
-			padding: 3em 0;
-		}
+			border-top: 5px solid #222;
 
-		.photo {
+			.row {
+				position: relative;
+			}
 
-		}
+			h2 {
+				margin: 4em 0 0;
+				position: relative;
+				z-index: 15;
+				font-size: 3em;
+				font-weight: 600;
+				font-style: italic;
+				text-transform: uppercase;
+			}
 
-		.info {
-			border-top: 1px solid #ccc;
-
-			.description {
+			p {
+				margin: 0 0 9em;
 				font-size: 1.25em;
-				line-height: 1.65em;
+				position: relative;
+				z-index: 15;
+			}
+
+			.ramy {
+
+			}
+
+			.hisham {
+				text-align: right;
+			}
+
+			.haitham {
+
+			}
+
+			.coach-photo {
+				height: 100%;
+				width: auto;
+				position: absolute;
+				opacity: .5;
+				-webkit-transition: all .25s;
+				-moz-transition: all .25s;
+				-o-transition: all .25s;
+    			transition: all .25s;
+			}
+			.bg-photo-ramy {
+				right: 0;
+				top: 0;
+			}
+
+			.bg-photo-hisham {
+				left: 0;
+				top: 0;
+			}
+
+			.bg-photo-haitham {
+				right: 0;
+				top: 0;
+			}
+
+			.info {
+				border-top: 1px solid #ccc;
+
+				.description {
+					font-size: 1.25em;
+					line-height: 1.65em;
+				}
+			}
+		}
+
+		.coach:hover {
+			
+			.bg-photo-ramy {
+				opacity: 1;
+			}
+
+			.bg-photo-hisham {
+				opacity: 1;
+			}
+
+			.bg-photo-haitham {
+				opacity: 1;
 			}
 		}
 
