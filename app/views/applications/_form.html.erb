@@ -1,0 +1,56 @@
+<div class="edit-form">
+  <%= form_for @application do |f| %>
+    <% if @application.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@application.errors.count, "error") %> prohibited this about introduction from being saved:</h2>
+
+        <ul>
+        <% @application.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="row">
+      <div class="col-sm-3">
+        <%= f.label :name %><br>
+        <%= f.text_field :name, class: "form-control" %>
+      </div>
+      <div class="col-sm-3">
+        <%= f.label :email %><br>
+        <%= f.text_field :email, class: "form-control" %>
+      </div>
+      <div class="col-sm-3">
+        <%= f.label :phone %><br>
+        <%= f.text_field :phone, class: "form-control" %>
+      </div>
+      <div class="col-sm-3">
+        <%= f.label :age %><br>
+        <%= f.number_field :age, class: "form-control" %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <%= f.label :results %><br>
+        <%= f.text_area :results, class: "form-control text-area" %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <%= f.label :training %><br>
+        <%= f.text_area :training, class: "form-control text-area" %>
+      </div>
+    </div>
+    <div class="button-container">
+      <div class="row">
+        <div class="col-sm-6">
+          <%= f.submit "Send Application", class: "save button" %>
+        </div>
+        <div class="col-sm-6">
+          <%= link_to 'Cancel', '/main/index', class: "cancel button" %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
