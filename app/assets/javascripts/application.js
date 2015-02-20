@@ -20,6 +20,27 @@
 $(document).ready(function() {
 
 
+    // Initialize stellar.js
+    /////////////////////////////////////////////////////////////////////////////////////////////
+    $.stellar.positionProperty.apple = {
+        setTop: function($el, newTop, originalTop) {
+            $el.css({
+                'top': originalTop - newTop,
+                'left': $el.hasClass('slide') ? originalTop - newTop : 0
+            });
+        },
+        setLeft: function($el, newLeft, originalLeft) {
+            $el.css('left', newLeft);
+        }
+    };
+
+    $.stellar({
+        horizontalScrolling: false,
+        positionProperty: 'apple'
+    });
+
+    
+
     // Cached vars
     /////////////////////////////////////////////////////////////////////////////////////////////
     var navlinks = $('.nav-links li a');

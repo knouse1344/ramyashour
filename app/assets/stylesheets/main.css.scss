@@ -11,22 +11,101 @@ h1, h2, h3, h4, h5, p, span, a {
 
 #index {
 	padding-top: 5em; 
+	position: relative;
 
 	h1 {
 		font-family: 'Raleway', sans-serif;
-		font-weight: 600;
+		font-weight: 900;
+		font-style: italic;
 		font-size: 2.5em;
+		text-shadow: 3px 3px 2px #000;
 		text-transform: uppercase;
 		text-align: center;
 		color: #fff;
 	}
 
 	h3 {
+		font-size: 2.25em;
+		line-height: 1.5em;
 		font-weight: 400;
+	}
+
+	p {
+		font-size: 1.25em;
+		line-height: 1.75em;
 	}
 
 	.bg-img {
 		width: 100%;
+	}
+
+	.slide {
+		-ms-transform: rotate(15deg); /* IE 9 */
+	    -webkit-transform: rotate(15deg); /* Chrome, Safari, Opera */
+	    -moz-transform: rotate(15deg); /* Chrome, Safari, Opera */
+	    transform: rotate(15deg);
+		position: absolute;
+	}
+
+	.gradient-light {
+		background: #e22d30; /* Old browsers */
+		top: -250px;
+		height: 400%;
+		width: 25em;
+		box-shadow: 2px 2px 25px #000;
+		margin-top: -400px;
+		left: 0;
+		margin-left: -400px;
+	    opacity: .35;
+	    z-index: -1;
+	}
+
+	.solid {
+		background: #FF8082;
+		top: -250px;
+		margin-top: -500px;
+		left: 0px;
+		margin-left: -350px;
+		height: 400%;
+		width: 25em;
+		z-index: -2;
+		-ms-transform: rotate(15deg); /* IE 9 */
+	    -webkit-transform: rotate(15deg); /* Chrome, Safari, Opera */
+	    -moz-transform: rotate(15deg); /* Chrome, Safari, Opera */
+	    transform: rotate(15deg);
+	    opacity: .25;
+	}
+
+	.stripe {
+		background: #CE1126;
+		height: 400%;
+		width: 1em;
+		top: -250px;
+		margin-top: -300px;
+		left: 900px;
+		margin-left:40%;
+		z-index: -2;
+		-ms-transform: rotate(15deg); /* IE 9 */
+	    -webkit-transform: rotate(15deg); /* Chrome, Safari, Opera */
+	    -moz-transform: rotate(15deg); /* Chrome, Safari, Opera */
+	    transform: rotate(15deg);
+	    opacity: .5;
+	}
+
+	.stripe-small {
+		background: #CE1126;
+		height: 400%;
+		width: .25em;
+		top: -250px;
+		margin-top: -300px;
+		left: 900px;
+		margin-left: 42%;
+		z-index: -2;
+		-ms-transform: rotate(15deg); /* IE 9 */
+	    -webkit-transform: rotate(15deg); /* Chrome, Safari, Opera */
+	    -moz-transform: rotate(15deg); /* Chrome, Safari, Opera */
+	    transform: rotate(15deg);
+	    opacity: .5;
 	}
 
 	.divider {
@@ -52,6 +131,7 @@ h1, h2, h3, h4, h5, p, span, a {
 	}
 
 	#latest {
+		position: relative;
 		padding: 2em 0 5em;
 
 		h3 {
@@ -92,6 +172,7 @@ h1, h2, h3, h4, h5, p, span, a {
 	}
 
 	#introduction {
+		position: relative;
 		padding: 3em 0;
 
 		.cover-left {
@@ -120,6 +201,7 @@ h1, h2, h3, h4, h5, p, span, a {
 	}
 
 	#coaches {
+		position: relative;
 		padding: 3em 0;
 
 		h1 {
@@ -264,15 +346,84 @@ h1, h2, h3, h4, h5, p, span, a {
 	}
 
 	#about {
+		border-top: 5px solid #222;
 		padding: 3em 0;
+		position: relative;
+		overflow: hidden;
 
 		.about-images {
 			margin: 2em 0;
 			width: 100%;
 		}
+
+		.date {
+			text-align: center;
+			background: #6B1010;
+			position: relative;
+			padding: 2em;
+			margin-top: 2em;
+
+			.inner {
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 100%;
+				width: 100%;
+				background: url('/assets/camp_player.jpg');
+				background-size: cover;
+				background-position: cover;
+				opacity: .5;
+				border: 15px solid #6B1010;
+				z-index: 1;
+				-webkit-transition: all .25s;
+				-moz-transition: all .25s;
+				-o-transition: all .25s;
+    			transition: all .25s;
+			}
+
+			h3, h4, p {
+				position: relative;
+				z-index: 5;
+			}
+
+			h3 {
+				margin: 0;
+				font-weight: bold;
+				font-style: italic;
+				font-size: 2.5em;
+				text-shadow: 1px 1px 2px #000;
+			}
+			h4 {
+				text-transform: uppercase;
+				font-weight: 800;
+				font-size: 3em;
+				margin: 0;
+				text-shadow: 1px 1px 2px #000;
+			}
+			p {
+				margin: 0;
+				line-height: 1em;
+				font-size: 1.5em;
+				font-style: italic;
+				text-transform: uppercase;
+			}
+		}
+
+		.date:hover {
+
+			.inner {
+				border: 5px solid #6B1010;
+				opacity: .75;
+			}
+		}
+
+		.location {
+			padding: 5em 0;
+		}
 	}
 
 	#apply {
+		border-top: 5px solid #222;
 		padding: 3em 0;
 
 		.application-info {
@@ -285,6 +436,7 @@ h1, h2, h3, h4, h5, p, span, a {
 	}
 
 	#schedule {
+		border-top: 5px solid #222;
 		padding: 3em 0;
 
 		.daily-schedule {
