@@ -4,7 +4,7 @@
 
 
 
-h1, h2, h3, h4, h5, p, span, a {
+h1, h2, h3, h4, h5, p, span, a, ul, ol, li {
 	font-family: 'Raleway', sans-serif;
 	color: #fff;
 }
@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5, p, span, a {
 	h3 {
 		font-size: 2.25em;
 		line-height: 1.5em;
-		font-weight: 400;
+		font-weight: 600;
 	}
 
 	p {
@@ -55,7 +55,7 @@ h1, h2, h3, h4, h5, p, span, a {
 		box-shadow: 2px 2px 25px #000;
 		margin-top: -400px;
 		left: 0;
-		margin-left: -400px;
+		margin-left: -500px;
 	    opacity: .35;
 	    z-index: -1;
 	}
@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5, p, span, a {
 		top: -250px;
 		margin-top: -500px;
 		left: 0px;
-		margin-left: -350px;
+		margin-left: -450px;
 		height: 400%;
 		width: 25em;
 		z-index: -2;
@@ -83,7 +83,7 @@ h1, h2, h3, h4, h5, p, span, a {
 		top: -250px;
 		margin-top: -300px;
 		left: 900px;
-		margin-left:40%;
+		margin-left: 35%;
 		z-index: -2;
 		-ms-transform: rotate(15deg); /* IE 9 */
 	    -webkit-transform: rotate(15deg); /* Chrome, Safari, Opera */
@@ -99,7 +99,7 @@ h1, h2, h3, h4, h5, p, span, a {
 		top: -250px;
 		margin-top: -300px;
 		left: 900px;
-		margin-left: 42%;
+		margin-left: 37%;
 		z-index: -2;
 		-ms-transform: rotate(15deg); /* IE 9 */
 	    -webkit-transform: rotate(15deg); /* Chrome, Safari, Opera */
@@ -347,13 +347,37 @@ h1, h2, h3, h4, h5, p, span, a {
 
 	#about {
 		border-top: 5px solid #222;
-		padding: 3em 0;
+		padding: 3em 0 8em;
 		position: relative;
 		overflow: hidden;
 
 		.about-images {
-			margin: 2em 0;
+			padding: 1em;
+		}
+
+		.about-images img {
+			margin: 0;
 			width: 100%;
+			opacity: .5;
+			-webkit-transition: all .25s;
+			-moz-transition: all .25s;
+			-o-transition: all .25s;
+			transition: all .25s;
+		}
+
+		p {
+			font-weight: 300;
+
+			i {
+				margin-right: 1em;
+				font-size: .75em;
+			}
+		}
+
+		.about-images:hover {
+			img {
+				opacity: 1;
+			}
 		}
 
 		.date {
@@ -362,6 +386,12 @@ h1, h2, h3, h4, h5, p, span, a {
 			position: relative;
 			padding: 2em;
 			margin-top: 2em;
+			box-shadow: inset 0 0 20px #000000;
+			overflow: hidden;
+			-webkit-transition: all .25s;
+			-moz-transition: all .25s;
+			-o-transition: all .25s;
+			transition: all .25s;
 
 			.inner {
 				position: absolute;
@@ -372,8 +402,7 @@ h1, h2, h3, h4, h5, p, span, a {
 				background: url('/assets/camp_player.jpg');
 				background-size: cover;
 				background-position: cover;
-				opacity: .5;
-				border: 15px solid #6B1010;
+				opacity: .15;
 				z-index: 1;
 				-webkit-transition: all .25s;
 				-moz-transition: all .25s;
@@ -388,7 +417,8 @@ h1, h2, h3, h4, h5, p, span, a {
 
 			h3 {
 				margin: 0;
-				font-weight: bold;
+				text-transform: uppercase;
+				font-weight: 400;
 				font-style: italic;
 				font-size: 2.5em;
 				text-shadow: 1px 1px 2px #000;
@@ -399,26 +429,94 @@ h1, h2, h3, h4, h5, p, span, a {
 				font-size: 3em;
 				margin: 0;
 				text-shadow: 1px 1px 2px #000;
+				letter-spacing: 2px;
 			}
 			p {
 				margin: 0;
 				line-height: 1em;
-				font-size: 1.5em;
+				font-size: 1em;
 				font-style: italic;
 				text-transform: uppercase;
+				font-weight: 300;
+				letter-spacing: 5px;
 			}
 		}
 
 		.date:hover {
 
 			.inner {
-				border: 5px solid #6B1010;
-				opacity: .75;
+				width: 106%;
+				height: 106%;
+				left: -3%;
+				top: -3%;
+				opacity: .5;
 			}
 		}
 
 		.location {
 			padding: 5em 0;
+
+			h4 {
+				font-weight: 600;
+				font-size: 1.25em;
+			}
+
+			p {
+				margin-left: 2em;
+				font-weight: 300;
+			}
+
+			.maps-link {
+				display: block;
+				margin-top: 2.5em;
+				padding: 1em;
+				background: #6B1010;
+
+				img {
+					width: 100%;
+					-webkit-transition: all .25s;
+					-moz-transition: all .25s;
+					-o-transition: all .25s;
+	    			transition: all .25s;
+				}
+
+				i {
+					width: 100px;
+					height: 100px;
+					opacity: 0;
+					font-size: 80px;
+					position: absolute;
+					top: 100px;
+					left: 50%;
+					margin-left: -50px;
+					display: block;
+					text-align: center;
+					text-shadow: 1px 1px 2px #000;
+					color: #fff;
+					z-index: 15;
+					-webkit-transition: all .25s;
+					-moz-transition: all .25s;
+					-o-transition: all .25s;
+	    			transition: all .25s;
+				}
+			}
+
+			.maps-link:hover {
+
+				img {
+					opacity: .5;
+				}
+
+				i {
+					opacity: 1;
+				}
+			}
+		}
+
+		.images {
+			padding: 1em;
+			background: #6B1010;
+			box-shadow: inset 0 0 50px #000000;
 		}
 	}
 
@@ -426,7 +524,12 @@ h1, h2, h3, h4, h5, p, span, a {
 		border-top: 5px solid #222;
 		padding: 3em 0;
 
+		p {
+			text-align: center;
+		}
+
 		.application-info {
+			padding: 3em 0 5em;
 			text-align: center;
 
 			h4 {
@@ -438,9 +541,49 @@ h1, h2, h3, h4, h5, p, span, a {
 	#schedule {
 		border-top: 5px solid #222;
 		padding: 3em 0;
+		position: relative;
+		overflow: hidden;
+		background: url('/assets/schedule_bg.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+
+		.schedule-bg {
+			background: url('/assets/schedule_bg.jpg');
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 150%;
+			width: 150%;
+		}
+
+		h3 {
+			font-size: 2em;
+		}
+
+		h4{
+			font-size: 1.25em;
+			line-height: 1.5em;
+			font-weight: 600;
+		}
 
 		.daily-schedule {
-			text-align: center;
+			text-align: left;
+			color: #fff;
+			font-size: 2em;
+
+			p {
+				font-size: .8em;
+				margin: .75em 0;
+				font-weight: 300;
+			}
+
+			li {
+				margin-bottom: 1em;
+			}
 		}
 	}
 }
