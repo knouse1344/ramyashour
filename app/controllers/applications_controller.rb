@@ -27,7 +27,8 @@ class ApplicationsController < ApplicationController
 
     respond_to do |format|
       if @application.save
-        format.html { redirect_to @application, notice: 'Application was successfully updated.' }
+        ApplicationMailer.application_confirmation(@application).deliver
+        format.html { redirect_to '/main/index', notice: 'Application was successfully updated.' }
         format.json { render action: 'show', status: :created, location: @application }
       else
         format.html { render action: 'new' }

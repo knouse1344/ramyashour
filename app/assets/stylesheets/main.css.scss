@@ -55,7 +55,7 @@ h1, h2, h3, h4, h5, p, span, a, ul, ol, li, label {
 		box-shadow: 2px 2px 25px #000;
 		margin-top: -400px;
 		left: 0;
-		margin-left: -500px;
+		margin-left: -800px;
 	    opacity: .35;
 	    z-index: -1;
 	}
@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5, p, span, a, ul, ol, li, label {
 		top: -250px;
 		margin-top: -500px;
 		left: 0px;
-		margin-left: -450px;
+		margin-left: -750px;
 		height: 400%;
 		width: 25em;
 		z-index: -2;
@@ -83,7 +83,7 @@ h1, h2, h3, h4, h5, p, span, a, ul, ol, li, label {
 		top: -250px;
 		margin-top: -300px;
 		left: 900px;
-		margin-left: 35%;
+		margin-left: 23%;
 		z-index: -2;
 		-ms-transform: rotate(15deg); /* IE 9 */
 	    -webkit-transform: rotate(15deg); /* Chrome, Safari, Opera */
@@ -99,7 +99,7 @@ h1, h2, h3, h4, h5, p, span, a, ul, ol, li, label {
 		top: -250px;
 		margin-top: -300px;
 		left: 900px;
-		margin-left: 37%;
+		margin-left: 25%;
 		z-index: -2;
 		-ms-transform: rotate(15deg); /* IE 9 */
 	    -webkit-transform: rotate(15deg); /* Chrome, Safari, Opera */
@@ -365,11 +365,24 @@ h1, h2, h3, h4, h5, p, span, a, ul, ol, li, label {
 			transition: all .25s;
 		}
 
+		.quote {
+			padding: 3em 0;
+			font-size: 1.55em;
+			font-style: italic;
+			font-weight: 400;
+			text-align: center;
+
+			span {
+				font-weight: 600;
+			}
+		}
+
 		p {
 			font-weight: 300;
 
 			i {
 				margin-right: 1em;
+				margin-left: 2em;
 				font-size: .75em;
 			}
 		}
@@ -462,7 +475,6 @@ h1, h2, h3, h4, h5, p, span, a, ul, ol, li, label {
 			}
 
 			p {
-				margin-left: 2em;
 				font-weight: 300;
 			}
 
@@ -517,12 +529,33 @@ h1, h2, h3, h4, h5, p, span, a, ul, ol, li, label {
 			padding: 1em;
 			background: #6B1010;
 			box-shadow: inset 0 0 50px #000000;
+
+			h3 {
+				margin: .5em 0;
+				text-transform: uppercase;
+				font-weight: 400;
+				font-style: italic;
+				font-size: 2.5em;
+				text-shadow: 1px 1px 2px #000;
+				text-align: center;
+			}
 		}
 	}
 
 	#apply {
 		border-top: 5px solid #222;
 		padding: 3em 0;
+
+		h4 {
+			font-weight: 600;
+			font-size: 1.5em;
+		}
+
+		p.asterisk {
+			color: #fff;
+			font-size: 1.1em;
+			font-style: italic;
+		}
 
 		p {
 			text-align: center;
