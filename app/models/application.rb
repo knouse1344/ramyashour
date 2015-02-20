@@ -1,3 +1,3 @@
 class Application < ActiveRecord::Base
-	attr_accessible :name, :email, :age, :phone, :results, :training
+	attr_accessible :name, :email, :age, :phone, :video, :results, :training
 end

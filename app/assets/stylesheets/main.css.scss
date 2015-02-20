@@ -4,7 +4,7 @@
 
 
 
-h1, h2, h3, h4, h5, p, span, a, ul, ol, li, label {
+h1, h2, h3, h4, h5, p, span, a, ul, ol, li, label, table, tr, th, td {
 	font-family: 'Raleway', sans-serif;
 	color: #fff;
 }
@@ -572,6 +572,7 @@ h1, h2, h3, h4, h5, p, span, a, ul, ol, li, label {
 
 		label {
 			margin-top: 1.5em;
+			font-weight: 400;
 		}
 
 		.button-container {
@@ -586,8 +587,8 @@ h1, h2, h3, h4, h5, p, span, a, ul, ol, li, label {
 				display: block;
 				color: #fff;
 				text-decoration: none;
-				font-size: 1.5em;
-				font-weight: 600;
+				font-size: 1.25em;
+				font-weight: 400;
 				text-transform: uppercase;
 				-webkit-transition: all .1s;
 				-moz-transition: all .1s;

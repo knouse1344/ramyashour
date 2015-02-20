@@ -1,3 +1,19 @@
 // Place all the styles related to the applications controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+#applications-view {
+	padding: 3em 0;
+
+	table {
+
+		th {
+			font-weight: 400;
+		}
+
+		th:first-child {
+			padding-left: 0;
+		}
+	}
+}

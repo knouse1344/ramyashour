@@ -3,7 +3,7 @@ class ApplicationsController < ApplicationController
 
   # GET /applications
   def index
-    @applications = Application.all
+    @applications = Application.paginate(:page => params[:page], :per_page => 5)
   end
 
   # GET /applications/1
@@ -69,6 +69,6 @@ class ApplicationsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def application_params
-      params.require(:application).permit(:name, :email, :phone, :age, :results, :training)
+      params.require(:application).permit(:name, :email, :phone, :age, :video, :results, :training)
     end
 end

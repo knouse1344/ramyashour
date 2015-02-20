@@ -5,6 +5,7 @@ class CreateApplications < ActiveRecord::Migration
       t.string :email
       t.string :phone
       t.integer :age
+      t.string :video
       t.text :results
       t.text :training
 

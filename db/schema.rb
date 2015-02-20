@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20150220013717) do
     t.string   "email"
     t.string   "phone"
     t.integer  "age"
+    t.string   "video"
     t.text     "results"
     t.text     "training"
     t.datetime "created_at"
