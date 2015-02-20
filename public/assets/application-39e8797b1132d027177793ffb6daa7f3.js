@@ -10818,10 +10818,12 @@ $(window).load(function() {
     // Cached vars
     /////////////////////////////////////////////////////////////////////////////////////////////
     var navlinks = $('.nav-links li a');
+    var navhome = $('.nav-home');
     var navcoaches = $('.nav-coaches');
     var navabout = $('.nav-about');
     var navschedule = $('.nav-schedule');
     var navapply = $('.nav-apply');
+    var index = $('#index');
     var coaches = $('#coaches');
     var about = $('#about');
     var schedule = $('#schedule');
@@ -10836,6 +10838,7 @@ $(window).load(function() {
             $(navcoaches).addClass('active');
         } else {
             $(navlinks).removeClass('active');
+            $(navhome).addClass('active');
         }
     }, {offset: '200px'});
     $(about).waypoint(function(direction) {

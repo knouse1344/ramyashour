@@ -747,48 +747,50 @@ body {
 #header .logo {
   display: block;
   width: 100px;
-  margin: 1em auto 0;
+  margin: 0 auto .5em;
 }
 /* line 59, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/application.css.scss */
 #header h1 {
-  margin: .5em 0 1em;
+  margin: 1em 0 .5em;
   line-height: 1.5em;
   color: #e7af58;
   font-size: 1.5em;
-  font-weight: 600;
+  font-weight: 900;
+  letter-spacing: 2px;
   text-transform: uppercase;
   font-family: "Raleway", sans-serif;
   text-align: center;
 }
-/* line 70, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/application.css.scss */
+/* line 71, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/application.css.scss */
 #header .logo-long {
   display: block;
   text-decoration: none;
   width: 100%;
 }
-/* line 75, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/application.css.scss */
+/* line 76, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/application.css.scss */
 #header .logo-long img {
   width: 100%;
 }
-/* line 80, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/application.css.scss */
+/* line 81, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/application.css.scss */
 #header .nav-links {
   padding: 0;
   margin: 0;
   text-align: center;
 }
-/* line 85, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/application.css.scss */
+/* line 86, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/application.css.scss */
 #header .nav-links li {
   display: inline-block;
 }
-/* line 88, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/application.css.scss */
+/* line 89, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/application.css.scss */
 #header .nav-links li a {
   display: block;
-  padding: 8px 0;
+  padding: .5em 3em;
   font-family: 'Raleway', sans-serif;
   font-size: 1.25em;
-  font-weight: 300;
+  font-weight: 900;
+  font-style: italic;
   color: #fff;
-  opacity: .5;
+  opacity: .4;
   text-decoration: none;
   text-transform: uppercase;
   -webkit-transition: all .25s;
@@ -796,17 +798,16 @@ body {
   -o-transition: all .25s;
   transition: all .25s;
 }
-/* line 104, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/application.css.scss */
+/* line 106, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/application.css.scss */
 #header .nav-links li a:hover {
   opacity: 1;
 }
-/* line 108, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/application.css.scss */
+/* line 110, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/application.css.scss */
 #header .nav-links li a.active {
   opacity: 1;
-  font-weight: 600;
 }
 
-/* line 116, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/application.css.scss */
+/* line 117, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/application.css.scss */
 footer {
   margin: 5em 0 0;
   padding: 3em 0;
@@ -814,7 +815,7 @@ footer {
 }
 
 @media (max-width: 992px) {
-  /* line 124, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/application.css.scss */
+  /* line 125, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/application.css.scss */
   body {
     font-size: 2em;
   }
