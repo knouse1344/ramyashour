@@ -10791,7 +10791,7 @@ https://github.com/imakewebthings/waypoints/blog/master/licenses.txt
 
 
 // Main Doc Ready Function
-$(document).ready(function() {
+$(window).load(function() {
 
 
     // Initialize stellar.js

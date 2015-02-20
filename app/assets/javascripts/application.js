@@ -17,7 +17,7 @@
 
 
 // Main Doc Ready Function
-$(document).ready(function() {
+$(window).load(function() {
 
 
     // Initialize stellar.js
