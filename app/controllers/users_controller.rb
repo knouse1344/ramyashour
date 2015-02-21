@@ -28,9 +28,10 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       sign_in @user
-      flash[:success] = "It's a pleasure to meet you!"
       redirect_to "/main/index"
+      flash[:success] = "It's a pleasure to meet you!"
     else
+      flash.now[:invalid] = 'There was a problem with sign up.  Check the form below.'
       render 'new'
     end
   end
