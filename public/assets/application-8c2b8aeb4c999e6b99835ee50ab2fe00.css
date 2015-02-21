@@ -692,6 +692,10 @@ h1, h2, h3, h4, h5, p, span, a, ul, ol, li, label, table, tr, th, td {
 #index #schedule .daily-schedule li {
   margin-bottom: 1em;
 }
+/* line 6, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/sessions.css.scss */
+#signup {
+  padding: 5em 0;
+}
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
