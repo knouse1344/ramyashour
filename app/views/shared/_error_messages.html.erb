@@ -3,10 +3,16 @@
     <div class="alert alert-error">
       The form contains <%= pluralize(object.errors.count, "error") %>.
     </div>
-    <ul>
-    <% object.errors.full_messages.each do |msg| %>
-      <li>* <%= msg %></li>
-    <% end %>
-    </ul>
+    <p>
+      <% object.errors.full_messages.each do |msg| %>
+        <span>* <%= msg %>,</span>
+      <% end %>
+    </p>
   </div>
+  <script type="text/javascript">
+    window.onload = scrollTo('#squash-form-offset');
+    function scrollTo(thing) {
+        location.hash = thing;
+    }
+  </script>
 <% end %>
