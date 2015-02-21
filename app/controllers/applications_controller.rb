@@ -72,4 +72,11 @@ class ApplicationsController < ApplicationController
     def application_params
       params.require(:application).permit(:name, :email, :phone, :age, :video, :results, :training)
     end
+
+    def signed_in_user
+      unless signed_in?
+        flash[:danger] = "Please log in."
+        redirect_to "/main/index"
+      end
+    end
 end
