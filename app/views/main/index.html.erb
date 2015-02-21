@@ -1,5 +1,6 @@
 <div id="index">
 	<div id="latest" class="container">
+		<% if signed_in? %><h1>WASSUP LOGIN</h1><% end %>
 		<h1>Latest News</h1>
 		<div class="row">
 			<div class="col-md-10 col-md-offset-1 col-sm-12">
@@ -96,8 +97,12 @@
 					<p><i class="fa fa-star"></i>Full Hotel Boarding (2 per room)</p>
 					<p><i class="fa fa-star"></i>3 Daily Meals</p>
 					<p><i class="fa fa-star"></i>Bus Transportation</p>
-					<p><i class="fa fa-star"></i>Supervisor for Kids</p>
 					<p><i class="fa fa-star"></i>Day Trips to Philly and Other Locations</p>
+					<h3>Coaches and Juniors:</h3>
+					<p><i class="fa fa-star"></i>Participants limit: 15 Juniors</p>
+					<p><i class="fa fa-star"></i>6 Coaches. </p>
+					<p><i class="fa fa-star"></i>Fitness trainer</p>
+					<p><i class="fa fa-star"></i>Child Supervisor</p>
 				</div>
 				<div class="col-md-5 col-sm-6">
 					<div class="date">
@@ -156,7 +161,7 @@
 						<li><p>Ramy's drill set</p></li>
 						<li><p>Hisham's drill set</p></li>
 						<li><p>Ramy and Hisham's Conditional Games </p></li>
-						<li><p>Matches (juniors with coaches)</p></li>
+						<li><p>Matches</p></li>
 						<li><p>
 							Video Presentation & Analysis :<br>
 							This consists of analysis of not only footage of participants but a special array of PSA match clips that Ramy will use to highlight common errors and great decisions in some of his favorite points from professional tournaments.
@@ -178,6 +183,8 @@
 					<h3>Selection Criteria:</h3>
 					<h4>Age Requirement: 13-18 Yrs*</h4><p class="asterisk">*possible admission for younger ages based on exceptional skill levels.</p>
 					<h4>Sample Video</h4><p>All applicants must upload to Youtube a 1 minute video clip of uninterrupted solo drives from Forehand and Backhand sides.  Camera phone video is fine.  Copy the link to the video in the form below.</p>
+					<p>Please list recent tournament experience.</p>
+					<p>Please list main training facility and coaches</p>
 				</div>
 			</div>
 			<%= render 'applications/new' %>

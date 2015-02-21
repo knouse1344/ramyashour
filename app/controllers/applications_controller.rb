@@ -1,5 +1,6 @@
 class ApplicationsController < ApplicationController
-  before_action :set_application, only: [:show, :edit, :update, :destroy]
+  before_action :signed_in_user, only: [:index, :show, :edit, :update, :destroy]
+  before_action :set_application, only: [:index, :show, :edit, :update, :destroy]
 
   # GET /applications
   def index
