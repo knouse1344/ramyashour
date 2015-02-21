@@ -132,6 +132,7 @@ h1, h2, h3, h4, h5, p, span, a, ul, ol, li, label, table, tr, th, td {
 	#latest {
 		position: relative;
 		padding: 2em 0 5em;
+		text-align: center;
 
 		h3 {
 			text-transform: uppercase;
@@ -161,9 +162,8 @@ h1, h2, h3, h4, h5, p, span, a, ul, ol, li, label, table, tr, th, td {
 			font-weight: 600;
 			font-size: 1.5em;
 			opacity: .5;
-			display: block;
+			display: inline-block;
 			margin: 2em auto 0;
-			width: 50%;
 			text-align: center;
 			border: 3px solid #fff;
 			padding: 1em 0;

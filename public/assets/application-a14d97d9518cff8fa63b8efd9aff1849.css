@@ -245,31 +245,31 @@ h1, h2, h3, h4, h5, p, span, a, ul, ol, li, label, table, tr, th, td {
 #index #latest {
   position: relative;
   padding: 2em 0 5em;
+  text-align: center;
 }
-/* line 136, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 137, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #latest h3 {
   text-transform: uppercase;
   font-size: 1.5em;
   font-weight: 600;
   margin-top: 1.25em;
 }
-/* line 151, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 152, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #latest .coach {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 1.5em;
   margin-top: 1.25em;
 }
-/* line 158, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 159, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #latest .apply-link {
   text-decoration: none;
   color: #fff;
   font-weight: 600;
   font-size: 1.5em;
   opacity: .5;
-  display: block;
+  display: inline-block;
   margin: 2em auto 0;
-  width: 50%;
   text-align: center;
   border: 3px solid #fff;
   padding: 1em 0;
@@ -827,7 +827,44 @@ h1, h2, h3, h4, h5, p, span, a, ul, ol, li, label, table, tr, th, td {
 }
 /* line 6, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/sessions.css.scss */
 #signup {
-  padding: 5em 0;
+  padding: 10em 0;
+}
+/* line 9, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/sessions.css.scss */
+#signup label {
+  margin-top: 1em;
+}
+/* line 13, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/sessions.css.scss */
+#signup .button-container {
+  margin-top: 2.5em;
+  margin-bottom: 1.5em;
+}
+/* line 17, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/sessions.css.scss */
+#signup .button-container .button {
+  width: 100%;
+  padding: .75em 0;
+  text-align: center;
+  border: 3px solid #aaa;
+  background: transparent;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.25em;
+  font-weight: 400;
+  text-transform: uppercase;
+  -webkit-transition: all .1s;
+  -moz-transition: all .1s;
+  -o-transition: all .1s;
+  transition: all .1s;
+}
+/* line 35, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/sessions.css.scss */
+#signup .button-container .save:hover {
+  background: green;
+  border: 3px solid green;
+}
+/* line 40, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/sessions.css.scss */
+#signup .button-container .cancel:hover {
+  background: red;
+  border: 3px solid red;
 }
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files

@@ -4,5 +4,42 @@
 
 
 #signup {
-	padding: 5em 0;
+	padding: 10em 0;
+
+	label {
+		margin-top: 1em;
+	}
+
+	.button-container {
+		margin-top: 2.5em;
+		margin-bottom: 1.5em;
+
+		.button {
+			width: 100%;
+			padding: .75em 0;
+			text-align: center;
+			border: 3px solid #aaa;
+			background: transparent;
+			display: block;
+			color: #fff;
+			text-decoration: none;
+			font-size: 1.25em;
+			font-weight: 400;
+			text-transform: uppercase;
+			-webkit-transition: all .1s;
+			-moz-transition: all .1s;
+			-o-transition: all .1s;
+			transition: all .1s;
+		}
+
+		.save:hover {
+			background: green;
+			border: 3px solid green;
+		}
+
+		.cancel:hover {
+			background: red;
+			border: 3px solid red;
+		}
+	}
 }
