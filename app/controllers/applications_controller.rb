@@ -28,11 +28,11 @@ class ApplicationsController < ApplicationController
     respond_to do |format|
       if @application.save
         ApplicationMailer.application_confirmation(@application).deliver
-        flash[:success] = "Your application has been sent."
+        flash.now[:success] = "Your application has been sent."
         format.html { redirect_to '/main/index', notice: 'Application was successfully updated.' }
         format.json { render action: 'show', status: :created, location: @application }
       else
-        flash[:danger] = "The application form was not filled correctly."
+        flash.now[:danger] = "The application form was not filled correctly."
         format.html { render '/main/index'}
       end
     end
