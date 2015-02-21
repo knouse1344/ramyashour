@@ -379,10 +379,45 @@ h1, h2, h3, h4, h5, p, span, a, ul, ol, li, label, table, tr, th, td {
   overflow: hidden;
 }
 /* line 374, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+#index #about p {
+  font-weight: 300;
+}
+/* line 377, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+#index #about p i {
+  margin-right: 1em;
+  margin-left: 2em;
+  font-size: .75em;
+}
+/* line 384, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+#index #about h3 {
+  margin-top: 1em;
+}
+/* line 388, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+#index #about .about-description-images {
+  padding: 1em;
+  margin: 2.5em 0 0;
+  background: #6B1010;
+  box-shadow: inset 0 0 60px #000000;
+}
+/* line 394, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+#index #about .about-description-images img {
+  margin: 0;
+  width: 100%;
+  opacity: .5;
+  -webkit-transition: all .25s;
+  -moz-transition: all .25s;
+  -o-transition: all .25s;
+  transition: all .25s;
+}
+/* line 407, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+#index #about .about-description-images:hover img {
+  opacity: 1;
+}
+/* line 412, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #about .about-images {
   padding: 1em;
 }
-/* line 378, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 416, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #about .about-images img {
   margin: 0;
   width: 100%;
@@ -392,7 +427,7 @@ h1, h2, h3, h4, h5, p, span, a, ul, ol, li, label, table, tr, th, td {
   -o-transition: all .25s;
   transition: all .25s;
 }
-/* line 388, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 426, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #about .quote {
   padding: 3em 0;
   font-size: 1.55em;
@@ -400,39 +435,42 @@ h1, h2, h3, h4, h5, p, span, a, ul, ol, li, label, table, tr, th, td {
   font-weight: 400;
   text-align: center;
 }
-/* line 395, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 433, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #about .quote span {
   font-weight: 600;
 }
-/* line 400, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
-#index #about p {
-  font-weight: 300;
-}
-/* line 403, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
-#index #about p i {
-  margin-right: 1em;
-  margin-left: 2em;
-  font-size: .75em;
-}
-/* line 411, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 439, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #about .about-images:hover img {
   opacity: 1;
 }
-/* line 416, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 444, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+#index #about .camp-fee {
+  border-top: 3px solid #CE1126;
+  border-bottom: 3px solid #CE1126;
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 3em;
+}
+/* line 451, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+#index #about .camp-fee h3 {
+  margin: 0;
+  padding: .75em 0;
+}
+/* line 457, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #about .date {
   text-align: center;
   background: #6B1010;
   position: relative;
   padding: 2em;
   margin-top: 2em;
-  box-shadow: inset 0 0 20px #000000;
+  box-shadow: inset 0 0 60px #000000;
   overflow: hidden;
   -webkit-transition: all .25s;
   -moz-transition: all .25s;
   -o-transition: all .25s;
   transition: all .25s;
 }
-/* line 429, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 470, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #about .date .inner {
   position: absolute;
   top: 0;
@@ -449,12 +487,12 @@ h1, h2, h3, h4, h5, p, span, a, ul, ol, li, label, table, tr, th, td {
   -o-transition: all .25s;
   transition: all .25s;
 }
-/* line 446, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 487, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #about .date h3, #index #about .date h4, #index #about .date p {
   position: relative;
   z-index: 5;
 }
-/* line 451, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 492, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #about .date h3 {
   margin: 0;
   text-transform: uppercase;
@@ -463,7 +501,7 @@ h1, h2, h3, h4, h5, p, span, a, ul, ol, li, label, table, tr, th, td {
   font-size: 2.5em;
   text-shadow: 1px 1px 2px #000;
 }
-/* line 459, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 500, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #about .date h4 {
   text-transform: uppercase;
   font-weight: 800;
@@ -472,7 +510,7 @@ h1, h2, h3, h4, h5, p, span, a, ul, ol, li, label, table, tr, th, td {
   text-shadow: 1px 1px 2px #000;
   letter-spacing: 2px;
 }
-/* line 467, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 508, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #about .date p {
   margin: 0;
   line-height: 1em;
@@ -482,7 +520,7 @@ h1, h2, h3, h4, h5, p, span, a, ul, ol, li, label, table, tr, th, td {
   font-weight: 300;
   letter-spacing: 5px;
 }
-/* line 480, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 521, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #about .date:hover .inner {
   width: 106%;
   height: 106%;
@@ -490,27 +528,25 @@ h1, h2, h3, h4, h5, p, span, a, ul, ol, li, label, table, tr, th, td {
   top: -3%;
   opacity: .5;
 }
-/* line 489, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
-#index #about .location {
-  padding: 5em 0;
-}
-/* line 492, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 532, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #about .location h4 {
   font-weight: 600;
   font-size: 1.25em;
 }
-/* line 497, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 537, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #about .location p {
   font-weight: 300;
 }
-/* line 501, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 541, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #about .location .maps-link {
   display: block;
   margin-top: 2.5em;
   padding: 1em;
   background: #6B1010;
+  position: relative;
+  box-shadow: inset 0 0 60px #000000;
 }
-/* line 507, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 549, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #about .location .maps-link img {
   width: 100%;
   -webkit-transition: all .25s;
@@ -518,14 +554,14 @@ h1, h2, h3, h4, h5, p, span, a, ul, ol, li, label, table, tr, th, td {
   -o-transition: all .25s;
   transition: all .25s;
 }
-/* line 515, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 557, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #about .location .maps-link i {
   width: 100px;
   height: 100px;
   opacity: 0;
   font-size: 80px;
   position: absolute;
-  top: 100px;
+  top: 80px;
   left: 50%;
   margin-left: -50px;
   display: block;
@@ -538,21 +574,21 @@ h1, h2, h3, h4, h5, p, span, a, ul, ol, li, label, table, tr, th, td {
   -o-transition: all .25s;
   transition: all .25s;
 }
-/* line 538, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 580, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #about .location .maps-link:hover img {
   opacity: .5;
 }
-/* line 542, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 584, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #about .location .maps-link:hover i {
   opacity: 1;
 }
-/* line 548, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 590, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #about .images {
   padding: 1em;
   background: #6B1010;
-  box-shadow: inset 0 0 50px #000000;
+  box-shadow: inset 0 0 150px #000000;
 }
-/* line 553, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 595, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #about .images h3 {
   margin: .5em 0;
   text-transform: uppercase;
@@ -562,14 +598,14 @@ h1, h2, h3, h4, h5, p, span, a, ul, ol, li, label, table, tr, th, td {
   text-shadow: 1px 1px 2px #000;
   text-align: center;
 }
-/* line 565, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 607, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #apply {
   border-top: 5px solid #222;
   padding: 3em 0;
   overflow: hidden;
   position: relative;
 }
-/* line 571, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 613, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #apply .apply-bg {
   background: url("/assets/ramy_apply.jpg");
   background-size: contain;
@@ -582,40 +618,39 @@ h1, h2, h3, h4, h5, p, span, a, ul, ol, li, label, table, tr, th, td {
   z-index: -1;
   height: 100%;
 }
-/* line 584, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 626, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #apply h4 {
   font-weight: 600;
   font-size: 1.5em;
+  text-align: center;
+  margin-top: 1.5em;
 }
-/* line 589, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 633, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #apply p.asterisk {
   color: #fff;
   font-size: 1.1em;
   font-style: italic;
 }
-/* line 595, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 639, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #apply p {
   text-align: center;
 }
-/* line 599, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 643, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #apply .application-info {
   padding: 3em 0 5em;
   text-align: center;
 }
-/* line 603, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
-#index #apply .application-info h4 {
-  margin-top: 1.5em;
-}
-/* line 608, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 648, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #apply label {
   margin-top: 1.5em;
   font-weight: 400;
 }
-/* line 613, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 653, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #apply .button-container {
   margin-top: 2.5em;
+  margin-bottom: 1.5em;
 }
-/* line 616, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 657, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #apply .button-container .button {
   width: 100%;
   padding: .75em 0;
@@ -633,17 +668,17 @@ h1, h2, h3, h4, h5, p, span, a, ul, ol, li, label, table, tr, th, td {
   -o-transition: all .1s;
   transition: all .1s;
 }
-/* line 634, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 675, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #apply .button-container .save:hover {
   background: green;
   border: 3px solid green;
 }
-/* line 639, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 680, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #apply .button-container .cancel:hover {
   background: red;
   border: 3px solid red;
 }
-/* line 646, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 687, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #schedule {
   border-top: 5px solid #222;
   padding: 3em 0;
@@ -654,7 +689,7 @@ h1, h2, h3, h4, h5, p, span, a, ul, ol, li, label, table, tr, th, td {
   background-repeat: no-repeat;
   background-position: center top;
 }
-/* line 656, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 697, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #schedule .schedule-bg {
   background: url("/assets/schedule_bg.jpg");
   background-size: cover;
@@ -666,29 +701,29 @@ h1, h2, h3, h4, h5, p, span, a, ul, ol, li, label, table, tr, th, td {
   height: 150%;
   width: 150%;
 }
-/* line 668, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 709, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #schedule h3 {
   font-size: 2em;
 }
-/* line 672, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 713, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #schedule h4 {
   font-size: 1.25em;
   line-height: 1.5em;
   font-weight: 600;
 }
-/* line 678, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 719, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #schedule .daily-schedule {
   text-align: left;
   color: #fff;
   font-size: 2em;
 }
-/* line 683, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 724, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #schedule .daily-schedule p {
   font-size: .8em;
   margin: .75em 0;
   font-weight: 300;
 }
-/* line 689, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
+/* line 730, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/main.css.scss */
 #index #schedule .daily-schedule li {
   margin-bottom: 1em;
 }

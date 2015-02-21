@@ -371,6 +371,44 @@ h1, h2, h3, h4, h5, p, span, a, ul, ol, li, label, table, tr, th, td {
 		position: relative;
 		overflow: hidden;
 
+		p {
+			font-weight: 300;
+
+			i {
+				margin-right: 1em;
+				margin-left: 2em;
+				font-size: .75em;
+			}
+		}
+
+		h3 {
+			margin-top: 1em;
+		}
+
+		.about-description-images {
+			padding: 1em;
+			margin: 2.5em 0 0;
+			background: #6B1010;
+			box-shadow: inset 0 0 60px #000000;
+
+			img {
+				margin: 0;
+				width: 100%;
+				opacity: .5;
+				-webkit-transition: all .25s;
+				-moz-transition: all .25s;
+				-o-transition: all .25s;
+				transition: all .25s;
+			}
+		}
+
+		.about-description-images:hover {
+
+			img {
+				opacity: 1;
+			}
+		}
+
 		.about-images {
 			padding: 1em;
 		}
@@ -397,19 +435,22 @@ h1, h2, h3, h4, h5, p, span, a, ul, ol, li, label, table, tr, th, td {
 			}
 		}
 
-		p {
-			font-weight: 300;
-
-			i {
-				margin-right: 1em;
-				margin-left: 2em;
-				font-size: .75em;
-			}
-		}
-
 		.about-images:hover {
 			img {
 				opacity: 1;
+			}
+		}
+
+		.camp-fee {
+			border-top: 3px solid #CE1126;
+			border-bottom: 3px solid #CE1126;
+			text-align: center;
+			margin-top: 2em;
+			margin-bottom: 3em;
+
+			h3 {
+				margin: 0;
+				padding: .75em 0;
 			}
 		}
 
@@ -419,7 +460,7 @@ h1, h2, h3, h4, h5, p, span, a, ul, ol, li, label, table, tr, th, td {
 			position: relative;
 			padding: 2em;
 			margin-top: 2em;
-			box-shadow: inset 0 0 20px #000000;
+			box-shadow: inset 0 0 60px #000000;
 			overflow: hidden;
 			-webkit-transition: all .25s;
 			-moz-transition: all .25s;
@@ -487,7 +528,6 @@ h1, h2, h3, h4, h5, p, span, a, ul, ol, li, label, table, tr, th, td {
 		}
 
 		.location {
-			padding: 5em 0;
 
 			h4 {
 				font-weight: 600;
@@ -503,6 +543,8 @@ h1, h2, h3, h4, h5, p, span, a, ul, ol, li, label, table, tr, th, td {
 				margin-top: 2.5em;
 				padding: 1em;
 				background: #6B1010;
+				position: relative;
+				box-shadow: inset 0 0 60px #000000;
 
 				img {
 					width: 100%;
@@ -518,7 +560,7 @@ h1, h2, h3, h4, h5, p, span, a, ul, ol, li, label, table, tr, th, td {
 					opacity: 0;
 					font-size: 80px;
 					position: absolute;
-					top: 100px;
+					top: 80px;
 					left: 50%;
 					margin-left: -50px;
 					display: block;
@@ -548,7 +590,7 @@ h1, h2, h3, h4, h5, p, span, a, ul, ol, li, label, table, tr, th, td {
 		.images {
 			padding: 1em;
 			background: #6B1010;
-			box-shadow: inset 0 0 50px #000000;
+			box-shadow: inset 0 0 150px #000000;
 
 			h3 {
 				margin: .5em 0;
@@ -584,6 +626,8 @@ h1, h2, h3, h4, h5, p, span, a, ul, ol, li, label, table, tr, th, td {
 		h4 {
 			font-weight: 600;
 			font-size: 1.5em;
+			text-align: center;
+			margin-top: 1.5em;
 		}
 
 		p.asterisk {
@@ -599,10 +643,6 @@ h1, h2, h3, h4, h5, p, span, a, ul, ol, li, label, table, tr, th, td {
 		.application-info {
 			padding: 3em 0 5em;
 			text-align: center;
-
-			h4 {
-				margin-top: 1.5em;
-			}
 		}
 
 		label {
@@ -612,6 +652,7 @@ h1, h2, h3, h4, h5, p, span, a, ul, ol, li, label, table, tr, th, td {
 
 		.button-container {
 			margin-top: 2.5em;
+			margin-bottom: 1.5em;
 
 			.button {
 				width: 100%;
