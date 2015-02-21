@@ -1,6 +1,15 @@
 Rails.application.routes.draw do
 
   resources :applications
+  resources :users
+  resources :sessions, only: [:new, :create, :destroy]
+
+  get "sessions/new"
+  get "sessions/destroy"
+  get "users/new"
+  match '/signin', to: 'sessions#new', via: 'get'
+  match '/signout', to: 'sessions#destroy', via: 'delete'
+  match '/signup', to: 'users#new', via: 'get'
  
   get 'main/index'
 
@@ -8,6 +17,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
+
   root 'main#index'
 
   # Example of regular route:
