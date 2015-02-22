@@ -967,7 +967,7 @@ body {
 /* line 97, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/application.css.scss */
 #header .nav-links li a {
   display: block;
-  padding: .5em 2.25em;
+  padding: .5em 1em;
   font-family: 'Raleway', sans-serif;
   font-size: 1.25em;
   font-weight: 900;
