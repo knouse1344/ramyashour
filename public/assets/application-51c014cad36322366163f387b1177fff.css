@@ -1002,4 +1002,10 @@ footer {
   body {
     font-size: 2em;
   }
+
+  /* line 141, /Users/Bryan/Desktop/projects/ramy/app/assets/stylesheets/application.css.scss */
+  #index #coaches .coach .bg-photo-hisham {
+    left: -50%;
+    top: 0;
+  }
 }
