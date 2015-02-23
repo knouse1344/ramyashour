@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   match '/signup', to: 'users#new', via: 'get'
  
   get 'main/index'
+  get 'main/home'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
