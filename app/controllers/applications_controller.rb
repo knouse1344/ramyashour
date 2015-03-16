@@ -1,5 +1,6 @@
 class ApplicationsController < ApplicationController
   before_action :signed_in_user, only: [:index, :show, :edit, :update, :destroy]
+  before_action :set_application, only: [:show, :edit, :update, :destroy]
 
   # GET /applications
   def index
@@ -9,6 +10,7 @@ class ApplicationsController < ApplicationController
   # GET /applications/1
   # GET /applications/1.json
   def show
+    @application = Application.find(params[:id])
   end
 
   # GET /applications/new
@@ -28,6 +30,9 @@ class ApplicationsController < ApplicationController
     respond_to do |format|
       if @application.save
         ApplicationMailer.application_confirmation(@application).deliver
+        ApplicationMailer.admin_confirmation(@application).deliver
+        ApplicationMailer.ramyadmin_confirmation(@application).deliver
+        ApplicationMailer.webadmin_confirmation(@application).deliver
         flash.now[:success] = "Your application has been sent."
         format.html { redirect_to '/main/index', notice: 'Application was successfully updated.' }
         format.json { render action: 'show', status: :created, location: @application }
@@ -67,6 +72,10 @@ class ApplicationsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def application_params
       params.require(:application).permit(:name, :email, :phone, :age, :video, :results, :training)
+    end
+
+    def set_application
+      @application = Application.find(params[:id])
     end
 
     def signed_in_user

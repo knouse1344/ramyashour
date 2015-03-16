@@ -20,21 +20,21 @@
             <th>Video</th>
             <th>Results</th>
             <th>Training</th>
+            <th></th>
           </tr>
         </thead>
 
         <tbody>
           <% @applications.each do |item| %>
             <tr>
-              <a href="/applications/<%= item.id %>">
-              <td><%= item.name %></td>
+              <td><a href="/applications/<%= item.id %>"><%= item.name %></a></td>
               <td><%= item.email %></td>
               <td><%= item.age %></td>
               <td><%= item.phone %></td>
               <td><%= item.video %></td>
               <td><%= truncate(item.results, length: 25) %></td>
               <td><%= truncate(item.training, length: 25) %></td>
-              </a>
+              <td><%= link_to "delete", item, method: :delete, data: { confirm: "You sure?" }, class: "delete-btn" %></td>
             </tr>
           <% end %>
         </tbody>
