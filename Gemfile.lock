@@ -126,7 +126,7 @@ DEPENDENCIES
   jquery-rails
   pg
   protected_attributes
-  rails (= 4.1.8)
+  rails
   rails-observers
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)

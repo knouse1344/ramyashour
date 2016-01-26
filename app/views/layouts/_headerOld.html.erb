@@ -16,8 +16,12 @@
 		<div class="row">
 			<div class="col-sm-10 col-sm-offset-1">
 				<ul class="nav-links row">
-					<li><a class="nav-home" href="/main/2016">Home</a></li>
-					<li><a class="nav-old" href="/main/index">2015 Academy Camp</a></li>
+					<li><a class="nav-home active" href="/main/home">Home</a></li>
+					<li><a class="nav-coaches" href="/main/index#coaches">Coaches</a></li>
+					<li><a class="nav-about" href="/main/index#about">About the Camp</a></li>
+					<li><a class="nav-schedule" href="/main/index#schedule">Schedule</a></li>
+					<li><a class="nav-apply" href="/main/index#apply">Apply</a></li>
+					<% if signed_in? %><li><a class="nav-admin" href="/applications">Applications</a></li><% end %>
 				</ul>
 			</div>
 		</div>
